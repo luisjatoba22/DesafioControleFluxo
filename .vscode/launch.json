@@ -1,0 +1,33 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Contador",
+      "request": "launch",
+      "mainClass": "Contador",
+      "projectName": "DesafioControleFluxo_deea9d14"
+    },
+    {
+      "name": "Electron Main",
+      "program": "${workspaceFolder}/main.js",
+      "request": "launch",
+      "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/electron",
+      "skipFiles": ["<node_internals>/**"],
+      "type": "node"
+    },
+    {
+      "name": "Attach by Process ID",
+      "processId": "${command:PickProcess}",
+      "request": "attach",
+      "skipFiles": ["<node_internals>/**"],
+      "type": "node"
+    },
+    {
+      "name": "Launch Program",
+      "program": "${workspaceFolder}/app.js",
+      "request": "launch",
+      "skipFiles": ["<node_internals>/**"],
+      "type": "node"
+    }
+  ]
+}
